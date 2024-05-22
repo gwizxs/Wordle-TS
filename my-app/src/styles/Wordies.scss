@@ -1,0 +1,68 @@
+.wordle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  .title {
+    text-transform: capitalize;
+  }
+  
+  .notification {
+    text-align: center;
+    height: 1rem;
+    margin: 1em;
+    color: salmon;
+    font-weight: 600;
+    font-size: 1.10rem;
+  
+    &--green {
+      color: #538d4e;
+    }
+  }
+
+
+  .alert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+  
+    &--won {
+      background-color: transparent;
+    }
+  
+    &--lost {
+      background-color: transparent;
+    }
+  }
+
+
+
+
+@media (max-width: 768px)   {
+  .alert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    margin-bottom: 15px;
+  
+    &--won {
+      background-color: #121213;
+      background-color: transparent;
+    }
+  
+    &--lost {
+      background-color: #121213;
+      background-color: transparent;
+    }
+  }
+}
+  

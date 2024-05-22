@@ -1,0 +1,180 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background: linear-gradient(to right, #121212, #4d7fc0);
+  transition: all 0.3 ease;
+
+}
+body.light {
+  background: linear-gradient(to right, #aca7c8, #9aacc4 );
+}
+
+
+.modals {
+    height: 100%;
+    width: 100%;
+    background-color: #212121;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s, pointer-events 0.5s; 
+}
+
+.modal.actives {
+    opacity: 0.93;
+    pointer-events: all;
+}
+
+.modal__contents {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #313131;
+    transform: scale(0.9); 
+    transition: transform 0.4s;
+    width: 25vw;
+    height: 60vh;
+    font-size: 1rem;
+}
+.modal__contents.actives {
+  transform: scale(1); 
+  
+}
+.modal__contents h1 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+  .button-containers {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    &--open-btn {
+    left: 0; 
+    margin-left: 0;
+    transform: none;
+    display:  block;
+}
+  }
+  
+  .button-item {
+    margin-bottom: 5px; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(-10px);
+  }
+
+  
+.button-item h3 {
+  margin-left: 20px;
+
+  
+}
+  .btn-share {
+    padding: 20px 20px;
+    background: #332f2f;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    margin-left: 20px;
+  }
+  
+  .btn-share .ant-btn {
+    color: #cec8c8;
+  }
+  
+  .btn-share .ant-tooltip-inner {
+    background-color: #5b5656; 
+  }
+  .btn {
+    padding: 20px 20px;
+    background: #1677ff;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    top: 25px;
+    left: 24px;
+    right: 24px;
+    width: 34px;
+    height: 34px;
+    overflow: hidden;
+    margin-left: 20px;
+    display: flex; 
+    align-items: center;
+  }
+  
+  .btn-theme {
+    color: #fff;
+   font-size: 22px;
+   transform: translateX(-10px);
+   transition: transform 0.3s ease;
+  }
+
+hr {
+  border-top: 1px solid #000;
+  display: 90%;
+  margin: 30px 0;
+}
+
+
+  @media (max-width: 768px) { 
+    .modal__contents {
+      padding: 20px;
+      border-radius: 12px;
+      background-color: #313131;
+      transform: scale(0.9); 
+      transition: transform 0.4s;
+      width: 75vw;
+      height: 40vh;
+      font-size: 0.8rem;
+  }
+  }
+
+  
+
+
+//  .btn::before, .btn::after  {
+//     display: inline-block;
+//     font-family: 'Courier New', Courier, monospace;
+//     color: #fff;
+//     font-size: 30px;
+//     transition: all 0.3s ease;
+//     transform: rotate(-90deg);
+//     transition: all 0.3s ease;
+//     transform-origin: center; 
+
+// }
+// .btn::after {
+//     transform-origin: -37px, 35px;
+//     margin-left: 70px;
+// }
+// .btn::before {
+//     transform-origin: 0px 75px;
+//     margin-left: -15px;
+// }
+
+// body.light .btn::after, body.light .btn::before {
+//     transform: rotate(360deg);
+// } 
+
+
+
+
+ 
