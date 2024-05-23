@@ -1,6 +1,6 @@
 # Это - аналог Wordle
 
-##стек технологий 
+## стек технологий 
 * vite
 * React ts
 * scss/sass/css
