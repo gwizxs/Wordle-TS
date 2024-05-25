@@ -4,5 +4,8 @@
     "sass": "^1.77.1",
     "scss": "^0.2.4",
     "vite": "^5.2.11"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
